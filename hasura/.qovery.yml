@@ -1,6 +1,6 @@
 application:
-  name: hasura-engine
-  project: hasura-demo
+  name: ${APP_NAME}
+  project: ${PROJECT_NAME}
   cloud_region: aws/eu-west-3
   publicly_accessible: true
 databases:
@@ -10,6 +10,6 @@ databases:
 routers:
 - name: main
   routes:
-  - application_name: hasura-engine
+  - application_name: ${APP_NAME}
     paths:
     - /*
