@@ -1,0 +1,15 @@
+application:
+  name: hasura-engine
+  project: hasura-demo
+  cloud_region: aws/eu-west-3
+  publicly_accessible: true
+databases:
+- type: postgresql
+  version: 11.5
+  name: my-postgresql-database
+routers:
+- name: main
+  routes:
+  - application_name: hasura-engine
+    paths:
+    - /*
