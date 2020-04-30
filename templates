@@ -1,2 +1,5 @@
-hasura|Hasura is a production-ready GraphQL backend
-gatsby|Gatsby is a fast modern site generator for React
+hasura|Hasura is a production-ready GraphQL backend.
+gatsby|Gatsby is a fast modern site generator for React.
+gin-postgresql|Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance. This template bootstrap a project preconfigured with a PostgreSQL database.
+gatsby|Gatsby is a fast modern site generator for React.
+rails-postgresql|Rails is a web application development framework written in the Ruby programming language. This template bootstrap a project preconfigured with a PostgreSQL database.
