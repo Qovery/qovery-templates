@@ -6,3 +6,4 @@ jhipster-postgresql|JHipster is a development platform to quickly generate, deve
 django-postgresql|Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 laravel-postgresql|Laravel is a web application framework with expressive, elegant syntax.
 node-postgresql|Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+node-express|Express is a fast, unopinionated, minimalist web framework for Node.js
