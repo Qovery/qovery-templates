@@ -2,12 +2,13 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"log"
 	"net/http"
-	"qovery-gin-postgresql/db"
+	"${APP_NAME}/db"
 	"time"
+
+	"github.com/gin-gonic/gin"
 )
 
 type JokeAPIResponseBody struct {

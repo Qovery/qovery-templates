@@ -1,4 +1,4 @@
-module qovery-gin-postgresql
+module ${APP_NAME}
 
 go 1.14
 
