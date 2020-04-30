@@ -2,7 +2,7 @@ package com.template.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.template.jhipsterPostgresqlApp;
+import com.template.JhipsterPostgresqlApp;
 import com.template.domain.PersistentAuditEvent;
 import com.template.repository.PersistenceAuditEventRepository;
 import io.github.jhipster.config.JHipsterProperties;
@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = jhipsterPostgresqlApp.class)
+@SpringBootTest(classes = JhipsterPostgresqlApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired

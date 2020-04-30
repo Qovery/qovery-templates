@@ -5,7 +5,7 @@ import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import com.template.jhipsterPostgresqlApp;
+import com.template.JhipsterPostgresqlApp;
 import com.template.config.audit.AuditEventConverter;
 import com.template.domain.PersistentAuditEvent;
 import com.template.repository.PersistenceAuditEventRepository;
@@ -34,7 +34,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = jhipsterPostgresqlApp.class)
+@SpringBootTest(classes = JhipsterPostgresqlApp.class)
 @Transactional
 public class AuditResourceIT {
     private static final String SAMPLE_PRINCIPAL = "SAMPLE_PRINCIPAL";

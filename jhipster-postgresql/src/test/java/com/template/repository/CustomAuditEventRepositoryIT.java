@@ -3,7 +3,7 @@ package com.template.repository;
 import static com.template.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_MAX_LENGTH;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.template.jhipsterPostgresqlApp;
+import com.template.JhipsterPostgresqlApp;
 import com.template.config.Constants;
 import com.template.config.audit.AuditEventConverter;
 import com.template.domain.PersistentAuditEvent;
@@ -26,7 +26,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = jhipsterPostgresqlApp.class)
+@SpringBootTest(classes = JhipsterPostgresqlApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
     @Autowired

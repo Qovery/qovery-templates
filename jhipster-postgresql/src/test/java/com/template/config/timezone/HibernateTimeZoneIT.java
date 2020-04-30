@@ -3,7 +3,7 @@ package com.template.config.timezone;
 import static java.lang.String.format;
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.template.jhipsterPostgresqlApp;
+import com.template.JhipsterPostgresqlApp;
 import com.template.repository.timezone.DateTimeWrapper;
 import com.template.repository.timezone.DateTimeWrapperRepository;
 import java.time.*;
@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for the UTC Hibernate configuration.
  */
-@SpringBootTest(classes = jhipsterPostgresqlApp.class)
+@SpringBootTest(classes = JhipsterPostgresqlApp.class)
 public class HibernateTimeZoneIT {
     @Autowired
     private DateTimeWrapperRepository dateTimeWrapperRepository;

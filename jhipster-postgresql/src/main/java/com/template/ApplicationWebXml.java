@@ -14,6 +14,6 @@ public class ApplicationWebXml extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         // set a default to use when no profile is configured.
         DefaultProfileUtil.addDefaultProfile(application.application());
-        return application.sources(jhipsterPostgresqlApp.class);
+        return application.sources(JhipsterPostgresqlApp.class);
     }
 }

@@ -3,7 +3,7 @@ package com.template.security;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
-import com.template.jhipsterPostgresqlApp;
+import com.template.JhipsterPostgresqlApp;
 import com.template.domain.User;
 import com.template.repository.UserRepository;
 import java.util.Locale;
@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = jhipsterPostgresqlApp.class)
+@SpringBootTest(classes = JhipsterPostgresqlApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
     private static final String USER_ONE_LOGIN = "test-user-one";

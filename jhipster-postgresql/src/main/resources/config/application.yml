@@ -134,7 +134,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'jhipsterPostgresqlApp'
+    name: 'JhipsterPostgresqlApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"

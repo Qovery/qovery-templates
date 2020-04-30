@@ -84,7 +84,7 @@ eclipse {
 defaultTasks "bootRun"
 
 springBoot {
-    mainClassName = "com.template.jhipsterPostgresqlApp"
+    mainClassName = "com.template.JhipsterPostgresqlApp"
 }
 
 test {

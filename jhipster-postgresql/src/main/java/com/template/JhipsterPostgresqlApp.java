@@ -19,12 +19,12 @@ import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 @EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
-public class jhipsterPostgresqlApp {
-    private static final Logger log = LoggerFactory.getLogger(jhipsterPostgresqlApp.class);
+public class JhipsterPostgresqlApp {
+    private static final Logger log = LoggerFactory.getLogger(JhipsterPostgresqlApp.class);
 
     private final Environment env;
 
-    public jhipsterPostgresqlApp(Environment env) {
+    public JhipsterPostgresqlApp(Environment env) {
         this.env = env;
     }
 
@@ -62,7 +62,7 @@ public class jhipsterPostgresqlApp {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(jhipsterPostgresqlApp.class);
+        SpringApplication app = new SpringApplication(JhipsterPostgresqlApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);
