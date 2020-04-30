@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    property-naming-strategy: "CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES"
+    date-format: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: non_empty
+  datasource:
+    url: "jdbc:postgresql://${QOVERY_DATABASE_MY_POSTGRESQL_HOST}:5432/${QOVERY_DATABASE_MY_POSTGRESQL_DATABASE}"
+    username: ${QOVERY_DATABASE_MY_POSTGRESQL_USERNAME}
+    password: ${QOVERY_DATABASE_MY_POSTGRESQL_PASSWORD}
+  jpa:
+    hibernate:
+      # Don't do this at home...
+      ddl-auto: update
