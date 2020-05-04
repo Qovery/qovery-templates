@@ -5,6 +5,6 @@ RUN yarn
 RUN yarn build
 
 FROM nginx:alpine
-COPY --from=ng-build /app/dist/angular-app /usr/share/nginx/html
+COPY --from=ng-build /app/dist/app /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
