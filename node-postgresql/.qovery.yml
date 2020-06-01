@@ -5,13 +5,10 @@ application:
   publicly_accessible: true
 databases:
 - type: postgresql
-  version: "11.5"
+  version: 11
   name: my-postgresql
 routers:
 - name: main
-  custom_domains:
-  - branch: master
-    domain: node.algo.green
   routes:
   - application_name: ${APP_NAME}
     paths:
