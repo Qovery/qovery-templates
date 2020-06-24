@@ -10,6 +10,7 @@ import {
 const router = new Router();
 
 router
+  .redirect("/", "/books")
   .get("/books", getBooks)
   .get("/books/:id", getBook)
   .post("/books", addBook)
