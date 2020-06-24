@@ -1,0 +1,15 @@
+application:
+  name: ${APP_NAME}
+  project: ${APP_NAME}
+  cloud_region: aws/eu-west-3
+  publicly_accessible: true
+databases:
+- type: mongodb
+  version: "3.6"
+  name: my-mongo
+routers:
+- name: main
+  routes:
+  - application_name: ${APP_NAME}
+    paths:
+    - /
