@@ -4,7 +4,7 @@ application:
   publicly_accessible: true
 databases:
 - type: postgresql
-  version: 11
+  version: 12
   name: my-postgresql
 routers:
 - name: main

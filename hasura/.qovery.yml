@@ -1,11 +1,10 @@
 application:
   name: ${APP_NAME}
   project: ${PROJECT_NAME}
-  cloud_region: aws/us-east-2
   publicly_accessible: true
 databases:
 - type: postgresql
-  version: 11
+  version: 12
   name: my-postgresql-database
 routers:
 - name: main
